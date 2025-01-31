@@ -160,4 +160,4 @@ else:
     order = '1,' + l2[0] +' 2,' + l2[1] + ' 3,' + l2[2] + ' 4,' + l2[3] + ' 5,' + l2[4] + ' 6,' + l2[5] + ' 7,' + l2[6] + ' 8,' + l2[7]
 
 if st.button('ルーレット実行'):
-    st.code(order, language=None)
+    st.code(order, language=None, wrap_lines=True)
