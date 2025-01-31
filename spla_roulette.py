@@ -1,7 +1,7 @@
 import collections.abc
 import streamlit as st
 import random as rd
-from st_copy_to_clipboard import st_copy_to_clipboard
+import streamlit.components.v1 as stc
 
 st.title('ブキルーレットアプリ')
 st.caption('created by taichaemon')
@@ -160,6 +160,12 @@ elif population_category == '7':
 else:
     order = '1,' + l2[0] +' 2,' + l2[1] + ' 3,' + l2[2] + ' 4,' + l2[3] + ' 5,' + l2[4] + ' 6,' + l2[5] + ' 7,' + l2[6] + ' 8,' + l2[7]
 
+html_content = f"""
+<button onclick="navigator.clipboard.writeText('{order}')">
+    コピー
+</button>
+"""
+
 if st.button('ルーレット実行'):
     st.code(order, language=None, wrap_lines=True)
-    st_copy_to_clipboard(order)
+    stc.html(html_content, height=50)
