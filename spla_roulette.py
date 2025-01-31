@@ -1,6 +1,7 @@
 import collections.abc
 import streamlit as st
 import random as rd
+from st_copy_to_clipboard import st_copy_to_clipboard
 
 st.title('ブキルーレットアプリ')
 st.caption('created by taichaemon')
@@ -161,3 +162,4 @@ else:
 
 if st.button('ルーレット実行'):
     st.code(order, language=None, wrap_lines=True)
+    st_copy_to_clipboard(order)
