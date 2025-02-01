@@ -140,9 +140,9 @@ l = ['わかば',
     '青デンタル',
     '黒デンタル']
 if duplication_category == 'あり':
-    l2 = rd.choices(l, k=len(l))
+    l2 = rd.choices(l, k=8)
 else:
-    l2 = rd.sample(l, len(l))
+    l2 = rd.sample(l, 8)
 if population_category == '1':
     order =  l2[0]
 elif population_category == '2':
