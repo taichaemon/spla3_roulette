@@ -5,7 +5,7 @@ import streamlit.components.v1 as stc
 
 st.title('ブキルーレットアプリ')
 st.caption('created by taichaemon')
-st.subheader('スプラ3全通常ブキ130種')
+st.subheader('スプラ3全通常ブキ160種')
 duplication_category = st.radio('【重複】', ('あり', 'なし'), horizontal=True)
 population_category = st.radio('【人数】', ('1', '2', '3', '4', '5', '6', '7', '8'), horizontal=True)
 
